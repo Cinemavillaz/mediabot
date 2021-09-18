@@ -3,8 +3,8 @@ import os
 
 DATABASE_NAME = os.environ.get("DATABASE_NAME","")
 DATABASE_URI = os.environ.get("DATABASE_URI","")
-mongo = pymongo.MongoClient(DB_URL)
-db = mongo[DB_NAME]
+mongo = pymongo.MongoClient(DATABASE_URL)
+db = mongo[DATABASE_NAME]
 dbcol = db["user"]
 
 def insert(chat_id):
