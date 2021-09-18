@@ -8,7 +8,7 @@ from utils import Media, get_file_details
 from pyrogram.errors import UserNotParticipant
 logger = logging.getLogger(__name__)
 
-ADMIN = int(os.environ.get("ADMIN", 1745047302))
+ADMINS = int(os.environ.get("ADMINS", 1745047302))
 
 @Client.on_message(filters.command("start"))
 async def start(bot, cmd):
